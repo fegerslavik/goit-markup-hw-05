@@ -620,18 +620,67 @@
         </button>
         <p class="modal-text">Leave your contacts and we will call you back</p>
         <form class="order-form" name="order">
-          <label class="label" for="name">Name
-          <input class="form-name" type="text" name="name" id="name" />
-          </label>
-          <label class="label" for="phone">Phone
-          <input class="form-phone" type="text" name="phone" id="phone" />
-          </label>
-          <label class="label"  for="email">Email
-          <input class="form-email" type="text" name="email" id="email" />
-          </label>
-          <label class="label" for="comment">Comment
-            <textarea class="form-comment" name="comment" id="comment" placeholder="Text input"></textarea>
-          </label>
+          <div class="label-name">
+            <label class="label" for="name"
+              >Name
+              <input class="input-form" type="text" name="name" id="name" />
+              <svg
+                class="icon-person"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+              >
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </label>
+          </div>
+          <div class="label-phone">
+            <label class="label" for="phone"
+              >Phone
+              <input class="input-form" type="text" name="phone" id="phone" />
+            </label>
+          </div>
+          <div class="label-email">
+            <label class="label" for="email"
+              >Email
+              <input class="input-form" type="text" name="email" id="email" />
+            </label>
+          </div>
+          <div class="label-comment">
+            <label class="label" for="comment"
+              >Comment
+              <textarea
+                class="form-comment"
+                name="comment"
+                id="comment"
+                placeholder="Text input"
+              ></textarea>
+            </label>
+            <div class="checkbox-field">
+              <input
+                class="checkbox visually-hidden"
+                type="checkbox"
+                name="privacy"
+                id="privacy"
+                value="true"
+              />
+              <label class="privacy-label" for="privacy"
+                ><span class="custom-checkbox">
+                  <svg
+                    class="checkbox-icon"
+                    width="10"
+                    height="8"
+                    viewBox="0 0 10 8"
+                    fill="none"
+                  >
+                    <use href="./images/icons.svg#icon-check"></use>
+                  </svg>
+                </span>
+                I accept the terms and conditions of the
+                <a class="privacy-link" href="">Privacy Policy</a>
+              </label>
+            </div>
+          </div>
           <button class="form-button" type="submit">Send</button>
         </form>
       </div>
