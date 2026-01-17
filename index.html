@@ -608,6 +608,7 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscr"></div>
       </div>
     </footer>
     <!--МОДАЛЬНЕ ВІКНО-->
@@ -624,12 +625,7 @@
             <label class="label" for="name"
               >Name
               <input class="input-form" type="text" name="name" id="name" />
-              <svg
-                class="icon-person"
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-              >
+              <svg class="icon-form" width="16" height="16" viewBox="0 0 16 16">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </label>
@@ -637,13 +633,19 @@
           <div class="label-phone">
             <label class="label" for="phone"
               >Phone
-              <input class="input-form" type="text" name="phone" id="phone" />
+              <input class="input-form" type="tel" name="phone" id="phone" />
+              <svg class="icon-form" width="16" height="16" viewBox="0 0 16 16">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
             </label>
           </div>
           <div class="label-email">
             <label class="label" for="email"
               >Email
-              <input class="input-form" type="text" name="email" id="email" />
+              <input class="input-form" type="email" name="email" id="email" />
+              <svg class="icon-form" width="16" height="16" viewBox="0 0 16 16">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
             </label>
           </div>
           <div class="label-comment">
@@ -677,7 +679,11 @@
                   </svg>
                 </span>
                 I accept the terms and conditions of the
-                <a class="privacy-link" href="">Privacy Policy</a>
+                <a
+                  class="privacy-link"
+                  href="https://policies.google.com/privacy"
+                  >Privacy Policy</a
+                >
               </label>
             </div>
           </div>
