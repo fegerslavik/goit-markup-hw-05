@@ -531,7 +531,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
   padding-bottom: 16px;
@@ -551,7 +551,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
   color: #ffffff;
@@ -567,7 +567,7 @@ body {
 
 .subscr-button:hover,
 .subscr-button:focus {
-  background-color: #404bbf;
+  background-color: #31d0aa;
 }
 
 .subscr-input {
@@ -585,17 +585,16 @@ body {
 
 .subscr-input:focus {
   outline: none;
-  border-color: #404bbf;
+  border-color: #31d0aa;
 }
 
 .subscr-input::placeholder {
-  color: #ffffff !important;
-  font-family: var(--font-family);
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
-  line-height: 200%;
+  line-height: 2;
   letter-spacing: 0.04em;
-  color: var(--white);
 }
 
 .subscr-icon {
@@ -613,9 +612,9 @@ body {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
     pointer-events 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .modal-overlay.is-open {
@@ -630,7 +629,7 @@ body {
 
 .modal {
   background-color: #fcfcfc;
-  position: absolute;
+  position: relative;
   border-radius: 4px;
   width: 408px;
   min-height: 584px;
@@ -647,7 +646,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 40px;
+  top: 24px;
   right: 24px;
   width: 24px;
   height: 24px;
@@ -670,7 +669,7 @@ body {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
@@ -681,29 +680,36 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 8px;
   border-radius: 4px;
   width: 360px;
   height: auto;
+  gap: 4px;
   padding-left: 24px;
-  padding-bottom: 8px;
+  padding-bottom: 24px;
 }
 
 .label {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 12px;
-  line-height: 117%;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  display: flex;
+  display: block;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 4px;
   position: relative;
+  margin-top: 4px;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .input-form {
+  position: relative;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   width: 360px;
@@ -718,7 +724,7 @@ body {
   outline: none;
 }
 
-.label:focus-within .icon-form {
+.input-wrapper:focus-within .icon-form {
   fill: #404bbf;
 }
 
@@ -741,7 +747,7 @@ body {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 12px;
-  line-height: 117%;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--navy-blue-modal);
 }
@@ -749,31 +755,31 @@ body {
 .icon-form {
   position: absolute;
   top: 50%;
-  left: 24px;
-  padding: 3px 0px;
-  width: 18px;
-  height: 24px;
-  transform: translateY(-15%) translateX(-40%);
+  left: 16px;
+  transform: translateY(-50%);
   fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-field {
-  padding-top: 16px;
-  padding-bottom: 24px;
+  margin-top: 16px;
+  margin-bottom: 24px;
 }
 
 .privacy-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 12px;
-  line-height: 117%;
+  line-height: 1.33;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
 
 .privacy-link {
-  line-height: 133%;
+  line-height: 1.33;
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4d5ae5;
@@ -804,7 +810,7 @@ body {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
   color: #ffffff;
