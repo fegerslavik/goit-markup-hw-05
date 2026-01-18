@@ -472,12 +472,12 @@ body {
   display: flex;
   align-items: baseline;
   flex-direction: row;
-  gap: 120px;
 }
 
 .footer-text {
   max-width: 264px;
   flex-direction: column;
+  margin-right: 120px;;
 }
 
 .footer-list {
