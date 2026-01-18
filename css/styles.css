@@ -673,7 +673,7 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  padding: 80px 24px 16px 24px;
+  padding: 72px 24px 16px 24px;
 }
 
 .order-form {
@@ -683,7 +683,6 @@ body {
   border-radius: 4px;
   width: 360px;
   height: auto;
-  gap: 4px;
   padding-left: 24px;
   padding-bottom: 24px;
 }
@@ -699,7 +698,8 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   position: relative;
-  margin-top: 4px;
+  margin-top: 8px;
+  margin-bottom: 4px;
 }
 
 .input-wrapper {
@@ -763,7 +763,6 @@ body {
 
 .checkbox-field {
   margin-top: 16px;
-  margin-bottom: 24px;
 }
 
 .privacy-label {
@@ -827,6 +826,7 @@ body {
   justify-content: center;
   align-self: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 24px;
 }
 
 .form-button:hover,
