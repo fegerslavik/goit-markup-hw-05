@@ -477,7 +477,7 @@ body {
 .footer-text {
   max-width: 264px;
   flex-direction: column;
-  margin-right: 120px;;
+  margin-right: 120px;
 }
 
 .footer-list {
@@ -789,7 +789,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.17;
+  line-height: 1.33;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
