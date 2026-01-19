@@ -481,6 +481,9 @@ body {
 .footer-text {
   max-width: 264px;
   flex-direction: column;
+}
+
+.footer-descr {
   margin-right: 120px;
 }
 
@@ -741,16 +744,16 @@ body {
 }
 
 .input-form:focus {
-  border-color: #404bbf;
+  border-color: #4d5ae5;
   outline: none;
 }
 
 .input-wrapper:focus-within .icon-form {
-  fill: #404bbf;
+  fill: #4d5ae5;
 }
 
 .form-comment:focus {
-  border-color: #404bbf;
+  border-color: #4d5ae5;
   outline: none;
 }
 
